@@ -1,0 +1,160 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Privacy Policy — Theo</title>
+<style>
+  :root {
+    --bg: #ffffff;
+    --surface: #f5f5f7;
+    --text: #1d1d1f;
+    --muted: #6e6e73;
+    --rule: #d2d2d7;
+    --accent: #007aff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #000000;
+      --surface: #1c1c1e;
+      --text: #f5f5f7;
+      --muted: #98989d;
+      --rule: #38383a;
+      --accent: #0a84ff;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #000000;
+    --surface: #1c1c1e;
+    --text: #f5f5f7;
+    --muted: #98989d;
+    --rule: #38383a;
+    --accent: #0a84ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0;
+    background: var(--bg);
+    color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 43rem; margin: 0 auto; padding: 3rem 1.25rem 5rem; }
+  header { border-bottom: 1px solid var(--rule); padding-bottom: 1.5rem; margin-bottom: 2rem; }
+  h1 { font-size: 2rem; line-height: 1.2; margin: 0 0 .4rem; letter-spacing: -.02em; }
+  h2 {
+    font-size: 1.2rem; margin: 2.5rem 0 .75rem; letter-spacing: -.01em;
+    padding-top: 1.5rem; border-top: 1px solid var(--rule);
+  }
+  h2:first-of-type { border-top: 0; padding-top: 0; }
+  .meta { color: var(--muted); font-size: .9rem; margin: 0; }
+  .lede {
+    background: var(--surface);
+    border-left: 3px solid var(--accent);
+    border-radius: 0 8px 8px 0;
+    padding: 1.1rem 1.25rem;
+    margin: 0 0 2rem;
+  }
+  .lede p { margin: 0; }
+  .lede p + p { margin-top: .75rem; }
+  ul { padding-left: 1.25rem; }
+  li { margin: .4rem 0; }
+  a { color: var(--accent); }
+  strong { font-weight: 600; }
+  code {
+    font-family: ui-monospace, "SF Mono", Menlo, Consolas, monospace;
+    font-size: .875em; background: var(--surface);
+    padding: .12em .4em; border-radius: 4px;
+  }
+  footer {
+    margin-top: 3.5rem; padding-top: 1.5rem;
+    border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .875rem;
+  }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+<header>
+  <h1>Privacy Policy</h1>
+  <p class="meta">Theo &middot; Last updated 8 August 2026</p>
+</header>
+
+<div class="lede">
+  <p><strong>Theo does not collect your data.</strong> There is no Theo server, no account on our end, no analytics, and no advertising. Everything you record about your pet is stored on your device and synced through <strong>your own private iCloud account</strong>.</p>
+  <p>The developer of Theo cannot read your pet's records, and neither can anyone else.</p>
+</div>
+
+<h2>What Theo stores, and where it lives</h2>
+
+<p>When you log a meal, a walk, a medication, a mood, a weight, or your pet's vet and medical details, that information is written to a database on your device.</p>
+
+<p>If you are signed in to iCloud, Theo also mirrors that database into your iCloud <strong>private database</strong> using Apple's CloudKit, so your records survive a lost phone and appear on your other devices. A CloudKit private database belongs to <em>you</em>, not to the app's developer. Apple's design does not grant developers access to it, and Theo contains no code that could read another person's data even in principle — there is no server for it to talk to.</p>
+
+<p>Theo has no backend of any kind. No pet record, photo, note, or piece of health information is ever transmitted to the developer or to any third party.</p>
+
+<h2>Signing in</h2>
+
+<p>Theo uses <strong>Sign in with Apple</strong>. This tells the app that the same person is returning, so your records stay attached to you and stay private if a device is shared.</p>
+
+<p>Theo receives only the anonymous, app-specific user identifier Apple issues. It does not request your name, and it does not use your email address. If Apple offers to hide your email, that choice has no effect on how Theo works.</p>
+
+<h2>Location</h2>
+
+<p>Theo can find dog parks near you. This is the only feature that uses location, and it is used <strong>only when you ask for it</strong>.</p>
+
+<ul>
+  <li>Theo requests a single location fix at the moment you search — it does not track you, and it does not run location in the background.</li>
+  <li>That fix is handed to <strong>Apple Maps</strong> to perform the search, then discarded.</li>
+  <li>Your location is <strong>never stored</strong>, never attached to your identity, and never transmitted to the developer.</li>
+  <li>If you save a park, Theo stores <em>that park's</em> coordinates — a public place — in your own private database. It does not store where you were when you found it.</li>
+</ul>
+
+<p>You can decline location access entirely. Every other part of Theo works without it, and you can change your mind at any time in iOS Settings.</p>
+
+<h2>What Theo does not do</h2>
+
+<ul>
+  <li><strong>No tracking.</strong> Theo does not track you across apps or websites, and shares nothing with data brokers.</li>
+  <li><strong>No analytics.</strong> There is no usage tracking, telemetry, or behavioural measurement of any kind.</li>
+  <li><strong>No advertising.</strong> No ads, no ad identifiers, no ad networks.</li>
+  <li><strong>No third-party code.</strong> Theo is built entirely on Apple's own frameworks and contains no third-party SDKs — so there is no other company embedded in the app that could be collecting anything.</li>
+  <li><strong>No selling or sharing.</strong> There is nothing to sell, because nothing reaches the developer.</li>
+</ul>
+
+<h2>Apple's role</h2>
+
+<p>Theo relies on Apple services — iCloud and CloudKit for sync, Sign in with Apple for authentication, and Apple Maps for park search. When you use these, Apple handles that data under its own privacy policy, which is available at <a href="https://www.apple.com/legal/privacy/">apple.com/legal/privacy</a>.</p>
+
+<h2>Deleting your data</h2>
+
+<p>You are always in control of your records.</p>
+
+<ul>
+  <li><strong>Delete individual entries</strong> at any time from within the app.</li>
+  <li><strong>Delete your account and all data</strong> from Settings. This removes Theo's data from your device and deletes its record zone from your iCloud private database.</li>
+  <li><strong>Delete the app</strong> to remove its local data from that device. Data already synced to your iCloud account remains there until you use the in-app deletion above.</li>
+</ul>
+
+<p>Because your records live in your own iCloud account rather than on a developer-controlled server, there is no copy elsewhere for us to delete on your behalf, and no data-access request to make of us — we have nothing to hand over.</p>
+
+<h2>Children</h2>
+
+<p>Theo is a tool for pet owners and is not directed at children. It does not knowingly collect information from anyone, including children, because it does not collect information at all.</p>
+
+<h2>Changes to this policy</h2>
+
+<p>If Theo ever changes what it stores or how, this page will be updated and the date at the top will change. If a future change involved collecting anything that leaves your device, it would be described here plainly and in advance.</p>
+
+<h2>Contact</h2>
+
+<p>Questions about this policy or about privacy in Theo: <a href="mailto:support@theosdogapp.com">support@theosdogapp.com</a>.</p>
+
+<footer>
+  Theo is an independent app for logging the daily care of dogs and cats.
+</footer>
+
+</div>
+</body>
+</html>

@@ -1,0 +1,88 @@
+<!doctype html>
+<html lang="en">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title>Theo — Support</title>
+<style>
+  :root {
+    --bg: #ffffff; --surface: #f5f5f7; --text: #1d1d1f;
+    --muted: #6e6e73; --rule: #d2d2d7; --accent: #007aff;
+  }
+  @media (prefers-color-scheme: dark) {
+    :root:not([data-theme="light"]) {
+      --bg: #000000; --surface: #1c1c1e; --text: #f5f5f7;
+      --muted: #98989d; --rule: #38383a; --accent: #0a84ff;
+    }
+  }
+  :root[data-theme="dark"] {
+    --bg: #000000; --surface: #1c1c1e; --text: #f5f5f7;
+    --muted: #98989d; --rule: #38383a; --accent: #0a84ff;
+  }
+  * { box-sizing: border-box; }
+  body {
+    margin: 0; background: var(--bg); color: var(--text);
+    font: 17px/1.6 -apple-system, BlinkMacSystemFont, "SF Pro Text", "Segoe UI", Roboto, Helvetica, Arial, sans-serif;
+    -webkit-font-smoothing: antialiased;
+  }
+  .wrap { max-width: 40rem; margin: 0 auto; padding: 4rem 1.25rem 5rem; }
+  h1 { font-size: 2.5rem; margin: 0 0 .25rem; letter-spacing: -.03em; }
+  .tagline { color: var(--muted); font-size: 1.05rem; margin: 0 0 2.5rem; }
+  h2 {
+    font-size: 1.15rem; margin: 2.25rem 0 .75rem;
+    padding-top: 1.5rem; border-top: 1px solid var(--rule); letter-spacing: -.01em;
+  }
+  dl { margin: 0; }
+  dt { font-weight: 600; margin-top: 1.1rem; }
+  dd { margin: .3rem 0 0; color: var(--text); }
+  a { color: var(--accent); }
+  .card {
+    background: var(--surface); border-radius: 10px;
+    padding: 1.1rem 1.25rem; margin: 1.25rem 0 0;
+  }
+  .card p { margin: 0; }
+  footer {
+    margin-top: 3rem; padding-top: 1.5rem; border-top: 1px solid var(--rule);
+    color: var(--muted); font-size: .875rem;
+  }
+  footer a { color: var(--muted); }
+</style>
+</head>
+<body>
+<div class="wrap">
+
+  <h1>Theo</h1>
+  <p class="tagline">A quiet daily record for your dog or cat — meals, walks, medication, mood, and weight, plus the vet details you need at the worst possible moment.</p>
+
+  <h2>Support</h2>
+
+  <div class="card">
+    <p>Something broken, confusing, or missing? Email <a href="mailto:support@theosdogapp.com">support@theosdogapp.com</a> and describe what you were doing when it happened. Theo has no analytics and no crash reporting, so a message from you is genuinely the only way a problem gets found.</p>
+  </div>
+
+  <h2>Common questions</h2>
+
+  <dl>
+    <dt>Where is my data stored?</dt>
+    <dd>On your device, and mirrored to your own private iCloud account. There is no Theo server, and the developer cannot read your records. See the <a href="privacy-policy.html">privacy policy</a>.</dd>
+
+    <dt>My records aren't appearing on my other device.</dt>
+    <dd>Both devices need to be signed in to the same iCloud account with iCloud Drive enabled. Sync runs in the background and can take a moment after a change.</dd>
+
+    <dt>Why does Theo ask for my location?</dt>
+    <dd>Only to find dog parks near you, and only at the moment you search. The location is used for that one search and discarded — it is never stored or transmitted to the developer.</dd>
+
+    <dt>How do I delete everything?</dt>
+    <dd>Settings &rarr; Delete Account. This removes Theo's data from your device and deletes its record zone from your iCloud account.</dd>
+
+    <dt>Does Theo work without iCloud?</dt>
+    <dd>Yes. Everything works locally. Without iCloud your records simply stay on that one device and are not backed up by sync.</dd>
+  </dl>
+
+  <footer>
+    <a href="privacy-policy.html">Privacy Policy</a>
+  </footer>
+
+</div>
+</body>
+</html>
