@@ -8,8 +8,9 @@ Theo needs two publicly reachable pages. It is served at <https://omar-codes.git
 | File | Purpose |
 | --- | --- |
 | `privacy-policy.html` | The privacy policy, linked both from the app's Settings screen and from the App Store listing's privacy policy field — App Review Guideline 5.1.1(i) requires it in both places. |
-| `index.html` | The support page, which doubles as the App Store listing's Support / Marketing URL. |
+| `index.html` | The support page, intended as the App Store listing's Support / Marketing URL. (Those two listing fields are not pointed here yet — that is a later step, not something this page's existence accomplishes on its own.) |
 | `.nojekyll` | Tells GitHub Pages to serve these files as-is, without running Jekyll over them. |
+| `README.md` | This file. Not served as a page — it states the repository's scope for whoever commits here next. |
 
 ## What must never live here — a standing rule, not a description of today
 
